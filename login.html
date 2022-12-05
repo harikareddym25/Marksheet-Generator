@@ -1,0 +1,33 @@
+<html>
+   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <style>
+   div {
+      width: 500px;
+      border: 15px solid green;
+      padding: 50px;
+      margin-left: 500px;
+      margin-top: 125px;
+      align-self: center;
+   }
+   </style>
+   <div>
+      <body>
+         <form action = "http://localhost:5000/login" method = "POST" enctype="multipart/form-data">
+             <i class="fas fa-file"></i>
+             <input type="file" accept =".csv" name ="file"/><br><br>
+             <i class="fas fa-file"></i>
+             <input type="file" accept =".csv" name="file"><br><br>
+             <p>Marks for Correct answer:</p>    
+             <p><input type = "number" name = "nm1" /></p>
+             <p>Marks for Wrong answer:</p>
+             <p><input type = "number" name = "nm2" /></p>     
+             <p><input type = "submit"  name="submit_button" value="Generate Roll Number wise Marksheet" /></p>
+             <p><input type = "submit"  name="submit_button" value="Generate Consise Marksheet" /></p>
+             <input type="button" value="Send Email"><br><br>
+       </form>
+    </body>
+   </div>
+   
+</html>
+
